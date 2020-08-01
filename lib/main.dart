@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 //import './RandomWords.dart';
-import './layout.dart';
+//import './layout.dart';
+import './routes.dart';
 
 void main() => runApp(new MyApp());
 
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primaryColor: Colors.red,
       ),
-      home: new Layout(),
+      home: new HomePage(),
+//      home: new Layout(),
 //      home: new Scaffold(
 //        appBar: new AppBar(
 //          title: new Text('Welcome to Flutter4'),
