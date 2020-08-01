@@ -1,6 +1,6 @@
-# startup_namer
+# slm_shopping_mall
 
-A new Flutter application.
+史莱姆的第一个Flutter商城应用
 
 ## Getting Started
 

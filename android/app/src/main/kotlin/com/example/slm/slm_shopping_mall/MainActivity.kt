@@ -1,4 +1,4 @@
-package com.example.startup_namer
+package com.example.slm.slm_shopping_mall
 
 import io.flutter.embedding.android.FlutterActivity
 
