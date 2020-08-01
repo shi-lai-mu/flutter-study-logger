@@ -103,6 +103,52 @@ Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese Alps. Situate
           titleSection,
           buttonSection,
           textSection,
+          new Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              new Icon(Icons.star, color: Colors.green),
+              new Icon(Icons.star, color: Colors.green[500]),
+              new Icon(Icons.star, color: Colors.green[500]),
+              new Icon(Icons.star, color: Colors.black),
+              new Icon(Icons.star, color: Colors.black),
+            ],
+          ),
+          new SizedBox(
+            height: 210.0,
+            width: 200.0,
+            child: new Card(
+              elevation: 24.0,
+              child: new Column(
+                children: [
+                  new ListTile(
+                    title: new Text('1625 Main Street', style: new TextStyle(fontWeight: FontWeight.w500)),
+                    subtitle: new Text('My City, CA 99984'),
+                    leading: new Icon(
+                      Icons.restaurant_menu,
+                      color: Colors.blue[500],
+                    ),
+                  ),
+                  new Divider(),
+                  new ListTile(
+                    title: new Text('(408) 555-1212',
+                        style: new TextStyle(fontWeight: FontWeight.w500)),
+                    leading: new Icon(
+                      Icons.contact_phone,
+                      color: Colors.blue[500],
+                    ),
+                  ),
+                  new ListTile(
+                    title: new Text('costa@example.com'),
+                    leading: new Icon(
+                      Icons.contact_mail,
+                      color: Colors.blue[500],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+
         ],
       ),
     );
