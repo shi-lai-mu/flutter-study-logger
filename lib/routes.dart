@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter/cupertino.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -12,7 +14,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             FlatButton(
-              child: Text('open new route'),
+              child: Text('open new route'*4),
               textColor: Colors.blue,
               onPressed: () {
                 Navigator.push(context,
@@ -21,7 +23,31 @@ class HomePage extends StatelessWidget {
                   })
                 );
               },
-            )
+            ),
+            CupertinoButton(
+                color: CupertinoColors.activeBlue,
+                child: Text("Press"),
+                onPressed: () {}
+            ),
+            Text('哈哈哈哈哈 '),
+            Image(
+              image: NetworkImage(
+                  "https://avatars2.githubusercontent.com/u/20411648?s=460&v=4"),
+              width: 100.0,
+            ),
+            Image.network(
+              "https://avatars2.githubusercontent.com/u/20411648?s=460&v=4",
+              width: 100.0,
+              height: 100.0,
+            ),
+            Text('哈哈哈哈哈 '),
+            Text('\uE914 \uE000 \uE90D',
+              style: TextStyle(
+                  fontFamily: "MaterialIcons",
+                  fontSize: 24.0,
+                  color: Colors.green
+              ),
+            ),
           ],
         ),
       ),
