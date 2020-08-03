@@ -3,6 +3,7 @@ import './RandomWords.dart';
 import './layout.dart';
 import './routes.dart';
 import './form.dart';
+import './progress.dart';
 
 void main() => runApp(new MyApp());
 
@@ -17,7 +18,9 @@ class MyApp extends StatelessWidget {
       ),
 //      home: new SwitchAndCheckBoxTestRoute(),
       routes: {
-        "/": (context) => SwitchAndCheckBoxTestRoute(),
+        "/": (context) => ProgressState(),
+        "switchAndCheck": (context) => SwitchAndCheckBoxTestRoute(),
+        "progress": (context) => ProgressState(),
         "new_page": (context) => HomePage(),
         "layout": (context) => Layout(),
         "randomWords": (context) => RandomWords(),
